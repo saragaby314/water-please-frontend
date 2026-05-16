@@ -57,7 +57,7 @@ function ProfileView({ usuario, onUsuarioActualizado }) {
           {usuario.nombre.charAt(0).toUpperCase()}
         </div>
         <div className="profile-info">
-          <h3>{usuario.nombre}</h3>
+          <h3>{usuario.nombre.charAt(0).toUpperCase() + usuario.nombre.slice(1)}</h3>
           <p>{usuario.email}</p>
         </div>
       </div>
