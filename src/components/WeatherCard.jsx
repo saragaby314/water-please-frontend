@@ -9,14 +9,14 @@ import './WeatherCard.css';
 
 function getWeatherComponent(icono) {
   switch (icono) {
-    case 'sunny': return <Sunny size={52} />;
-    case 'partly-cloudy': return <PartlyCloudy size={52} />;
-    case 'cloudy': return <Cloudy size={52} />;
-    case 'rainy': return <Rainy size={52} />;
-    case 'snowy': return <Snowy size={52} />;
-    case 'stormy': return <Stormy size={52} />;
-    case 'foggy': return <Foggy size={52} />;
-    default: return <Cloudy size={52} />;
+    case 'sunny': return <Sunny size={64} />;
+    case 'partly-cloudy': return <PartlyCloudy size={64} />;
+    case 'cloudy': return <Cloudy size={64} />;
+    case 'rainy': return <Rainy size={64} />;
+    case 'snowy': return <Snowy size={64} />;
+    case 'stormy': return <Stormy size={64} />;
+    case 'foggy': return <Foggy size={64} />;
+    default: return <Cloudy size={64} />;
   }
 }
 

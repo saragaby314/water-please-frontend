@@ -72,6 +72,7 @@ function Dashboard() {
       <BottomNav
         vistaActual={vistaActual}
         onChange={setVistaActual}
+        tema={tema}
       />
 
     </div>

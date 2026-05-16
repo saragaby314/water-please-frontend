@@ -39,12 +39,21 @@
 
 .recomendacion-desglose {
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  font-size: 0.8rem;
-  color: var(--text-muted);
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
+.recomendacion-desglose span {
+  background: rgba(6, 90, 130, 0.08);
+  color: var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid rgba(6, 90, 130, 0.15);
+}
 /* PROGRESO */
 .progreso-header {
   display: flex;
@@ -166,15 +175,52 @@
 }
 
 .bebida-cantidad {
-  background: var(--primary);
-  color: white;
+  background: rgba(6, 90, 130, 0.3);
+  color: var(--primary);
   padding: 0.2rem 0.6rem;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
+  border: 1px solid var(--primary);
 }
 
 .bebida-hora {
   color: var(--text-muted);
   font-size: 0.8rem;
+}
+
+.confirmacion-bebida {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--success);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--success);
+  font-weight: 600;
+  font-size: 0.9rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.dark .btn-registrar {
+  background: linear-gradient(135deg, #065A82 0%, #0e7490 100%);
+  box-shadow: 0 4px 12px rgba(6, 90, 130, 0.4);
+}
+
+.dark .btn-registrar:hover {
+  background: linear-gradient(135deg, #0e7490 0%, #0891b2 100%);
+}
+
+.objetivo-cumplido {
+  background: linear-gradient(135deg, #059669, #10B981);
+  color: white;
+  padding: 1rem;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  animation: fadeIn 0.5s ease;
 }
