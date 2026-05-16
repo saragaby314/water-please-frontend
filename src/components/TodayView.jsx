@@ -64,7 +64,7 @@ function TodayView({ usuario }) {
 
             {/* SALUDO */}
             <div className="greeting">
-                <h2>Hola, {usuario.nombre}!!</h2>
+                <h2>Hola, {usuario.nombre}!</h2>
                 <p>Tu recomendación de hoy</p>
             </div>
 
