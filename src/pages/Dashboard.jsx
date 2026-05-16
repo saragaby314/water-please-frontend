@@ -45,7 +45,7 @@ function Dashboard() {
     <div className={`app-layout ${tema}`}>
 
       <header className="app-header">
-        <Logo height={32} />
+        <Logo height={32} color={tema === 'dark' ? '#4FC3F7' : '#065A82'} />
         <button className="theme-toggle" onClick={toggleTema}>
           {tema === 'light'
             ? <Moon size={22} color="#065A82" />
