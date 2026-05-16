@@ -6,6 +6,7 @@ import {
   guardarSesion
 } from '../utils/storage';
 import './Auth.css';
+import Logo from '../assets/icons/Logo';
 
 function Login() {
   const navigate = useNavigate();
@@ -84,9 +85,10 @@ function Login() {
       <div className="auth-card">
 
         <div className="auth-header">
-          <h1>💧 Water Please</h1>
+          <Logo height={40} />
           <p>Tu hidratación personalizada</p>
         </div>
+
 
         {/* TABS */}
         <div className="auth-tabs">
