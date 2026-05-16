@@ -31,7 +31,7 @@ export function useWeather() {
         descripcion: descripcion.texto,
       });
     } catch {
-      setWeather({ temperatura: 20, icono: '🌡️', descripcion: 'Temperatura por defecto' });
+      setWeather({ temperatura: 20, icono: 'cloudy', descripcion: 'Temperatura por defecto' });
     } finally {
       setLoading(false);
     }
