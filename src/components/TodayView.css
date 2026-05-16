@@ -1,0 +1,180 @@
+.today-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* SALUDO */
+.greeting h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.25rem 0;
+}
+
+.greeting p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* RECOMENDACIÓN */
+.recomendacion-card {
+  text-align: center;
+  border-left: 4px solid var(--primary);
+}
+
+.recomendacion-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0 0 0.25rem 0;
+}
+
+.recomendacion-valor {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 0.75rem 0;
+}
+
+.recomendacion-desglose {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* PROGRESO */
+.progreso-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.progreso-ml {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.progreso-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.estado-badge {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.estado-bajo { color: var(--warning); }
+.estado-medio { color: var(--primary); }
+.estado-casi { color: #9b59b6; }
+.estado-cumplido { color: var(--success); }
+
+.falta-ml {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* FORMULARIO */
+.form-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.form-card .form-group {
+  margin-bottom: 0.75rem;
+}
+
+.form-card label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.form-card select,
+.form-card input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: var(--bg-card);
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.form-card select:focus,
+.form-card input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.btn-registrar {
+  width: 100%;
+  padding: 0.875rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.25rem;
+}
+
+/* LISTA BEBIDAS */
+.lista-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.bebidas-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bebida-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  background: var(--bg);
+  border-radius: 8px;
+  border-left: 3px solid var(--primary);
+}
+
+.bebida-nombre {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.bebida-cantidad {
+  background: var(--primary);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.bebida-hora {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
