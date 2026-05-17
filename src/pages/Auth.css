@@ -37,7 +37,6 @@
   font-size: 0.9rem;
 }
 
-/* TABS */
 .auth-tabs {
   display: flex;
   margin-bottom: 1.5rem;
@@ -63,7 +62,6 @@
   color: white;
 }
 
-/* FORM */
 .form-group {
   margin-bottom: 1rem;
 }

@@ -13,7 +13,6 @@ function ProfileView({ usuario, onUsuarioActualizado }) {
     nivel_actividad: usuario.nivel_actividad,
   });
   const [guardado, setGuardado] = useState(false);
-
   const recomendacion = calcularRecomendacion(usuario);
 
   function handleChange(e) {
@@ -51,7 +50,6 @@ function ProfileView({ usuario, onUsuarioActualizado }) {
         </div>
       )}
 
-      {/* DATOS PRINCIPALES */}
       <div className="card profile-card">
         <div className="profile-avatar">
           {usuario.nombre.charAt(0).toUpperCase()}
@@ -62,13 +60,11 @@ function ProfileView({ usuario, onUsuarioActualizado }) {
         </div>
       </div>
 
-      {/* RECOMENDACIÓN ACTUAL */}
       <div className="card profile-recomendacion">
         <span className="profile-rec-label">Tu recomendación diaria base</span>
         <span className="profile-rec-valor">{recomendacion} mL</span>
       </div>
 
-      {/* DATOS EDITABLES */}
       <div className="card">
         <div className="profile-section-header">
           <h3>Datos personales</h3>
@@ -153,10 +149,10 @@ function ProfileView({ usuario, onUsuarioActualizado }) {
         )}
       </div>
 
-      {/* LOGOUT */}
       <button className="btn-logout" onClick={handleLogout}>
         Cerrar sesión
       </button>
+
     </div>
   );
 }

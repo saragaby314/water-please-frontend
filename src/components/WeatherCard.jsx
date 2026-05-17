@@ -5,6 +5,7 @@ import Rainy from '../assets/icons/weather/Rainy';
 import Snowy from '../assets/icons/weather/Snowy';
 import Stormy from '../assets/icons/weather/Stormy';
 import Foggy from '../assets/icons/weather/Foggy';
+import Night from '../assets/icons/weather/Night';
 import './WeatherCard.css';
 
 function getWeatherComponent(icono) {
@@ -16,6 +17,7 @@ function getWeatherComponent(icono) {
     case 'snowy': return <Snowy size={64} />;
     case 'stormy': return <Stormy size={64} />;
     case 'foggy': return <Foggy size={64} />;
+    case 'night': return <Night size={64} />;
     default: return <Cloudy size={64} />;
   }
 }
@@ -32,7 +34,7 @@ function WeatherCard({ weather, loading }) {
   if (!weather) return null;
 
   return (
-    <div className="weather-card">
+    <div className={`weather-card ${weather.isDia === false ? 'weather-night' : ''}`}>
       <div className="weather-left">
         {getWeatherComponent(weather.icono)}
       </div>

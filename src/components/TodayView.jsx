@@ -66,16 +66,13 @@ function TodayView({ usuario }) {
   return (
     <div className="today-view">
 
-      {/* SALUDO */}
       <div className="greeting">
         <h2>Hola, {usuario.nombre.charAt(0).toUpperCase() + usuario.nombre.slice(1)}</h2>
         <p>Tu recomendación de hoy</p>
       </div>
 
-      {/* WEATHER CARD */}
       <WeatherCard weather={weather} loading={weatherLoading} />
 
-      {/* RECOMENDACIÓN */}
       <div className="card recomendacion-card">
         <p className="recomendacion-label">Recomendación diaria</p>
         <p className="recomendacion-valor">{recomendacion} mL</p>
@@ -86,7 +83,6 @@ function TodayView({ usuario }) {
         </div>
       </div>
 
-      {/* PROGRESO */}
       <div className="card progreso-card">
         <div className="progreso-header">
           <span>Has bebido hoy</span>
@@ -106,21 +102,18 @@ function TodayView({ usuario }) {
         </div>
       </div>
 
-      {/* MENSAJE OBJETIVO CUMPLIDO */}
       {progreso.estado === 'cumplido' && (
         <div className="objetivo-cumplido">
           Objetivo diario cumplido. ¡Buen trabajo!
         </div>
       )}
 
-      {/* CONFIRMACIÓN BEBIDA */}
       {confirmacion && (
         <div className="confirmacion-bebida">
           Bebida registrada correctamente
         </div>
       )}
 
-      {/* FORMULARIO REGISTRAR BEBIDA */}
       <div className="card form-card">
         <h3>Registrar bebida</h3>
         <form onSubmit={handleRegistrar}>
@@ -135,7 +128,7 @@ function TodayView({ usuario }) {
             >
               {BEBIDAS_CATALOGO.map(b => (
                 <option key={b.id} value={b.id}>
-                  {b.nombre} (×{b.factor})
+                  {b.nombre} (x{b.factor})
                 </option>
               ))}
             </select>
@@ -159,7 +152,6 @@ function TodayView({ usuario }) {
         </form>
       </div>
 
-      {/* LISTA BEBIDAS HOY */}
       {bebidas.length > 0 && (
         <div className="card lista-card">
           <h3>Bebidas de hoy</h3>

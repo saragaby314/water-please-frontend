@@ -70,3 +70,7 @@
   margin: 0.4rem 0 0;
   font-weight: 500;
 }
+
+.weather-night {
+  background: linear-gradient(135deg, #0f2744 0%, #1a3a5c 50%, #0d1f36 100%);
+}

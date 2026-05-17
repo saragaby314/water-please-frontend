@@ -21,7 +21,6 @@
   font-size: 0.9rem;
 }
 
-/* AVATAR */
 .profile-card {
   display: flex;
   align-items: center;
@@ -55,7 +54,6 @@
   color: var(--text-muted);
 }
 
-/* RECOMENDACIÓN */
 .profile-recomendacion {
   display: flex;
   justify-content: space-between;
@@ -74,7 +72,6 @@
   color: var(--primary);
 }
 
-/* DATOS */
 .profile-section-header {
   display: flex;
   justify-content: space-between;
@@ -128,7 +125,6 @@
   text-transform: capitalize;
 }
 
-/* FORM */
 .profile-form .form-group {
   margin-bottom: 0.75rem;
 }
@@ -186,7 +182,6 @@
   cursor: pointer;
 }
 
-/* LOGOUT */
 .btn-logout {
   width: 100%;
   padding: 0.875rem;
