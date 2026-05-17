@@ -1,6 +1,5 @@
 # Memoria Técnica — Water Please Frontend
-## Prototipo 3.0 · React · The Bridge 2026
-
+## Prototipo 3.0 · React 
 **Autora:** Saray Guillen  
 **Bootcamp:** FullStack · The Bridge 2026  
 **Fecha:** Mayo 2026  
