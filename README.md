@@ -43,18 +43,6 @@ Water Please calcula tu recomendación diaria de agua basándose en:
 
 ---
 
-## Requisitos del Proyecto Cumplidos
-
-| Requisito | Tipo | Implementación |
-|-----------|------|----------------|
-| `useState` | ✅ Obligatorio | Formularios, vistas, bebidas, tema |
-| `useEffect` | ✅ Obligatorio | Carga de clima, sesión, bebidas del día |
-| `localStorage` | ✅ Obligatorio | Usuarios, sesión, tema, historial bebidas |
-| Mínimo 5 componentes | ✅ Obligatorio | 8 componentes funcionales |
-| API externa | ⭐ Opcional | Open-Meteo (temperatura en tiempo real) |
-
----
-
 ## Instalación
 
 ```bash
