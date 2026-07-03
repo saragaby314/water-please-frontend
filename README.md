@@ -131,8 +131,6 @@ RECOMENDACIÓN = (BASE × FACTOR_EDAD) + ACTIVIDAD + TEMPERATURA
 
 ## Repositorio Backend
 
-## Repositorio Backend
-
 El backend REST API (Prototipo 2.0) está en:
 👉 [water-please-backend](https://github.com/saragaby314/water-please-backend)
 
