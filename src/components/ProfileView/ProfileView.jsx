@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { guardarUsuario, guardarSesion, cerrarSesion } from '../utils/storage';
-import { calcularRecomendacion } from '../utils/hydration';
+import { guardarUsuario, guardarSesion, cerrarSesion } from '../../utils/storage';
+import { calcularRecomendacion } from '../../utils/hydration';
 import { useNavigate } from 'react-router-dom';
 import './ProfileView.css';
 

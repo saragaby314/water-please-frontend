@@ -5,10 +5,10 @@ import { useLocalStorage } from '../hooks/useLocalStorage';
 import Logo from '../assets/icons/Logo';
 import Sun from '../assets/icons/Sun';
 import Moon from '../assets/icons/Moon';
-import BottomNav from '../components/BottomNav';
-import TodayView from '../components/TodayView';
-import HistoryView from '../components/HistoryView';
-import ProfileView from '../components/ProfileView';
+import BottomNav from '../components/BottomNav/BottomNav';
+import TodayView from '../components/TodayView/TodayView';
+import HistoryView from '../components/HistoryView/HistoryView';
+import ProfileView from '../components/ProfileView/ProfileView';
 import './Dashboard.css';
 
 function Dashboard() {

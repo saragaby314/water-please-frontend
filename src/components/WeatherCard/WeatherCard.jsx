@@ -1,10 +1,11 @@
-import Sunny from '../assets/icons/weather/Sunny';
-import Cloudy from '../assets/icons/weather/Cloudy';
-import PartlyCloudy from '../assets/icons/weather/PartlyCloudy';
-import Rainy from '../assets/icons/weather/Rainy';
-import Snowy from '../assets/icons/weather/Snowy';
-import Stormy from '../assets/icons/weather/Stormy';
-import Foggy from '../assets/icons/weather/Foggy';
+import Sunny from '../../assets/icons/weather/Sunny';
+import Cloudy from '../../assets/icons/weather/Cloudy';
+import PartlyCloudy from '../../assets/icons/weather/PartlyCloudy';
+import Rainy from '../../assets/icons/weather/Rainy';
+import Snowy from '../../assets/icons/weather/Snowy';
+import Stormy from '../../assets/icons/weather/Stormy';
+import Foggy from '../../assets/icons/weather/Foggy';
+import Night from '../../assets/icons/weather/Night';
 import './WeatherCard.css';
 
 function getWeatherComponent(icono) {
