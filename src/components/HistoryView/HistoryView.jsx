@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { obtenerBebidasHoy } from '../utils/storage';
+import { obtenerBebidasHoy } from '../../utils/storage';
 import './HistoryView.css';
 
 function HistoryView({ usuario }) {

@@ -1,6 +1,6 @@
-import Drop from '../assets/icons/Drop';
-import Calendar from '../assets/icons/Calendar';
-import User from '../assets/icons/User';
+import Drop from '../../assets/icons/Drop';
+import Calendar from '../../assets/icons/Calendar';
+import User from '../../assets/icons/User';
 import './BottomNav.css';
 
 function BottomNav({ vistaActual, onChange, tema }) {
