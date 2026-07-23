@@ -2,28 +2,51 @@
   position: relative;
   background: var(--border);
   border-radius: 20px;
-  height: 28px;
+  height: 40px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
   border-radius: 20px;
-  transition: width 0.5s ease;
+  transition: width 0.8s ease;
+  position: relative;
 }
 
-.progress-bajo { background: linear-gradient(90deg, #F59E0B, #FCD34D); }
-.progress-medio { background: linear-gradient(90deg, #065A82, #1C7293); }
-.progress-casi { background: linear-gradient(90deg, #9b59b6, #a569bd); }
-.progress-cumplido { background: linear-gradient(90deg, #10B981, #34D399); }
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.progress-bajo    { background: linear-gradient(90deg, #F59E0B, #FCD34D); }
+.progress-medio   { background: linear-gradient(90deg, #065A82, #1C7293); }
+.progress-casi    { background: linear-gradient(90deg, #7C3AED, #A78BFA); }
+.progress-cumplido { background: linear-gradient(90deg, #059669, #34D399); }
 
 .progress-label {
   position: absolute;
-  right: 10px;
+  right: 12px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  z-index: 1;
 }

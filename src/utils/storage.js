@@ -31,7 +31,6 @@ export function cerrarSesion() {
   localStorage.removeItem('wp_sesion_nombre');
 }
 
-// ===== TEMA =====
 export function guardarTema(tema) {
   localStorage.setItem('wp_tema', tema);
 }

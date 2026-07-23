@@ -10,14 +10,11 @@ import Logo from '../assets/icons/Logo';
 
 function Login() {
   const navigate = useNavigate();
-  const [modo, setModo] = useState('login'); // 'login' | 'register'
+  const [modo, setModo] = useState('login'); 
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  // Login form
   const [loginData, setLoginData] = useState({ email: '', password: '' });
-
-  // Register form
   const [registerData, setRegisterData] = useState({
     nombre: '',
     email: '',
@@ -29,7 +26,6 @@ function Login() {
     nivel_actividad: 'moderado',
   });
 
-  // ===== LOGIN =====
   function handleLoginChange(e) {
     setLoginData({ ...loginData, [e.target.name]: e.target.value });
   }
@@ -51,7 +47,6 @@ function Login() {
     navigate('/dashboard');
   }
 
-  // ===== REGISTER =====
   function handleRegisterChange(e) {
     setRegisterData({ ...registerData, [e.target.name]: e.target.value });
   }
@@ -106,9 +101,8 @@ function Login() {
           </button>
         </div>
 
-        {error && <div className="error-message">⚠️ {error}</div>}
+        {error && <div className="error-message">{error}</div>}
 
-        {/* LOGIN */}
         {modo === 'login' && (
           <form onSubmit={handleLoginSubmit}>
             <div className="form-group">
@@ -143,7 +137,6 @@ function Login() {
           </form>
         )}
 
-        {/* REGISTER */}
         {modo === 'register' && (
           <form onSubmit={handleRegisterSubmit}>
             <div className="form-group">

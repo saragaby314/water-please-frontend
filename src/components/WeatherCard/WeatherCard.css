@@ -1,11 +1,37 @@
 .weather-card {
-  background: linear-gradient(135deg, #065A82 0%, #1C7293 100%);
-  border-radius: 16px;
-  padding: 1.25rem;
+  background: linear-gradient(135deg, #065A82 0%, #0e8ab5 50%, #1C7293 100%);
+  border-radius: 20px;
+  padding: 1.25rem 1.5rem;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(6, 90, 130, 0.3);
+  min-height: 90px;
+}
+
+.weather-card::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+}
+
+.weather-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
 }
 
 .weather-loading {
@@ -13,24 +39,38 @@
   opacity: 0.7;
 }
 
-.weather-temp {
+.weather-left {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
 }
 
-.weather-icon {
-  font-size: 2rem;
+.weather-right {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  flex: 1;
 }
 
 .weather-degrees {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -2px;
 }
 
 .weather-desc {
   font-size: 0.9rem;
   opacity: 0.85;
-  margin: 0;
-  text-align: right;
+  margin: 0.4rem 0 0;
+  font-weight: 500;
+}
+
+.weather-night {
+  background: linear-gradient(135deg, #0f2744 0%, #1a3a5c 50%, #0d1f36 100%);
 }

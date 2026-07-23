@@ -14,4 +14,5 @@ function Night({ size = 64, color = 'white' }) {
     </svg>
   );
 }
+
 export default Night;

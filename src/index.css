@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
   background-color: var(--light);
   color: var(--text);
   min-height: 100vh;

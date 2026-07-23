@@ -3,7 +3,7 @@
   justify-content: space-around;
   padding: 0.5rem 0;
   background: var(--bg-card);
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--border);  
   position: sticky;
   bottom: 0;
 }
@@ -19,6 +19,19 @@
   cursor: pointer;
   color: var(--text-muted);
   transition: color 0.2s;
+  position: relative;
+}
+
+.nav-btn.active::before {
+  content: '';
+  position: absolute;
+  top: -2px;         
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;       
+  height: 3px;
+  background: var(--primary);
+  border-radius: 0 0 6px 6px;
 }
 
 .nav-btn.active {
@@ -26,7 +39,8 @@
 }
 
 .nav-icon {
-  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav-label {

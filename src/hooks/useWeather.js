@@ -24,14 +24,20 @@ export function useWeather() {
     try {
       setLoading(true);
       const datos = await currentWeather(lat, lon);
-      const descripcion = getWeatherDescription(datos.weatherCode);
+      const descripcion = getWeatherDescription(datos.weatherCode, datos.isDia);
       setWeather({
         temperatura: datos.temperatura,
         icono: descripcion.icono,
         descripcion: descripcion.texto,
+        isDia: datos.isDia,
       });
     } catch {
-      setWeather({ temperatura: 20, icono: '🌡️', descripcion: 'Temperatura por defecto' });
+      setWeather({
+        temperatura: 20,
+        icono: 'cloudy',
+        descripcion: 'Temperatura por defecto',
+        isDia: true,
+      });
     } finally {
       setLoading(false);
     }

@@ -1,13 +1,13 @@
 .light {
   --primary: #065A82;
   --secondary: #1C7293;
-  --bg: #E8F4F8;
+  --bg: #dceef5;
   --bg-card: #FFFFFF;
   --text: #1E293B;
   --text-muted: #64748B;
-  --border: #e2e8f0;
-  --success: #10B981;
-  --warning: #F59E0B;
+  --border: #c8dfe9;
+  --success: #0d9668;
+  --warning: #d97706;
 }
 
 .dark {
@@ -30,19 +30,20 @@
   color: var(--text);
   max-width: 480px;
   margin: 0 auto;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 .app-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.875rem 1.25rem;
   background: var(--bg-card);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 1px 8px rgba(6, 90, 130, 0.08);
 }
 
 .app-logo {
@@ -53,13 +54,20 @@
 }
 
 .theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
-  padding: 0.25rem;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--border);
 }
 
 .app-main {
@@ -72,8 +80,14 @@
   background: var(--bg-card);
   border-radius: 16px;
   padding: 1.25rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 12px rgba(6, 90, 130, 0.08);
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-1px);
 }
 
 .btn-primary {
