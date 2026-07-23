@@ -20,11 +20,12 @@ export function calcularRecomendacion(usuario, temperatura = 20) {
 export function calcularProgreso(totalBebido, recomendacion) {
   const porcentaje = Math.min(100, Math.round((totalBebido / recomendacion) * 100));
   const falta = Math.max(0, recomendacion - totalBebido);
+  const exceso = Math.max(0, totalBebido - recomendacion);
 
   let estado = 'bajo';
   if (porcentaje >= 100) estado = 'cumplido';
   else if (porcentaje >= 75) estado = 'casi';
   else if (porcentaje >= 50) estado = 'medio';
 
-  return { porcentaje, falta, estado };
+  return { porcentaje, falta, exceso, estado };
 }

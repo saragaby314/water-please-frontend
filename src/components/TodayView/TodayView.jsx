@@ -83,8 +83,17 @@ function TodayView({ usuario }) {
                     {progreso.estado !== 'cumplido' && (
                         <span className="falta-ml">Faltan {progreso.falta} mL</span>
                     )}
+                    {progreso.estado === 'cumplido' && progreso.exceso > 0 && (
+                        <span className="exceso-ml">+{progreso.exceso} mL sobre tu objetivo</span>
+                    )}
                 </div>
             </div>
+
+            {progreso.exceso > 1000 && (
+                <div className="aviso-exceso">
+                    Has superado tu objetivo en más de 1 litro. Beber agua en exceso tampoco es recomendable.
+                </div>
+            )}
 
             {/* FORMULARIO REGISTRAR BEBIDA */}
             <div className="card form-card">
