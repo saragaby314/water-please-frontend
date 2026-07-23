@@ -34,6 +34,7 @@
   100% { left: 100%; }
 }
 
+.progress-inicio  { background: var(--border); }
 .progress-bajo    { background: linear-gradient(90deg, #F59E0B, #FCD34D); }
 .progress-medio   { background: linear-gradient(90deg, #065A82, #1C7293); }
 .progress-casi    { background: linear-gradient(90deg, #7C3AED, #A78BFA); }

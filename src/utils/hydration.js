@@ -23,7 +23,8 @@ export function calcularProgreso(totalBebido, recomendacion) {
   const exceso = Math.max(0, totalBebido - recomendacion);
 
   let estado = 'bajo';
-  if (porcentaje >= 100) estado = 'cumplido';
+  if (totalBebido === 0) estado = 'inicio';
+  else if (porcentaje >= 100) estado = 'cumplido';
   else if (porcentaje >= 75) estado = 'casi';
   else if (porcentaje >= 50) estado = 'medio';
 

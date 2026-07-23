@@ -75,12 +75,13 @@ function TodayView({ usuario }) {
                 <ProgressBar porcentaje={progreso.porcentaje} estado={progreso.estado} />
                 <div className="progreso-footer">
                     <span className={`estado-badge estado-${progreso.estado}`}>
+                        {progreso.estado === 'inicio' && 'Registra tu primera bebida del día'}
                         {progreso.estado === 'bajo' && 'Necesitas beber más'}
                         {progreso.estado === 'medio' && 'Vas por buen camino'}
                         {progreso.estado === 'casi' && '¡Casi lo logras!'}
                         {progreso.estado === 'cumplido' && '¡Objetivo cumplido!'}
                     </span>
-                    {progreso.estado !== 'cumplido' && (
+                    {progreso.estado !== 'cumplido' && progreso.estado !== 'inicio' && (
                         <span className="falta-ml">Faltan {progreso.falta} mL</span>
                     )}
                     {progreso.estado === 'cumplido' && progreso.exceso > 0 && (

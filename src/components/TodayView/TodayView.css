@@ -80,6 +80,7 @@
   font-weight: 600;
 }
 
+.estado-inicio { color: var(--text-muted); }
 .estado-bajo { color: var(--warning); }
 .estado-medio { color: var(--primary); }
 .estado-casi { color: #9b59b6; }
